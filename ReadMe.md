@@ -4,6 +4,7 @@ A simulator for drawing process of sporting events made with StreamLit. Starting
 
 Updates to consider:
 
+- State search cache
 - Setting of favourite team
 - Dynamic UI
 - Data crawlers
