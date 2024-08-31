@@ -91,8 +91,8 @@ def draw_new_team():
     else:
         st.session_state['no_need_to_select'] = False
         st.session_state['draw_status'] = 'waiting_select'
-    print(f"draw status: {st.session_state['draw_status']}")
-    print(f'len drawn team ids: {len(st.session_state["drawn_team_ids"])}')
+    # print(f"draw status: {st.session_state['draw_status']}")
+    # print(f'len drawn team ids: {len(st.session_state["drawn_team_ids"])}')
     if st.session_state['cur_team']['name'] == 'FC Bayern München':
         st.toast("Mia san mia!", icon='❤️')
     else:
@@ -284,8 +284,8 @@ def select_opponents():
         st.session_state['draw_round'] += 1
         st.session_state['draw_status'] = 'waiting_draw'
     
-    print(f"draw status: {st.session_state['draw_status']}")
-    print(f'len drawn team ids: {len(st.session_state["drawn_team_ids"])}')
+    # print(f"draw status: {st.session_state['draw_status']}")
+    # print(f'len drawn team ids: {len(st.session_state["drawn_team_ids"])}')
     
     if cur_team['name'] == 'FC Bayern München':
         st.toast("#ESMUELLERT", icon='2️⃣')
@@ -386,7 +386,7 @@ def get_country_flag_html(country, size=15):
     # </div>
     # '''
     return f'''
-    <div style="auto; height: {size}px; display: inline-flex; margin: 2px; box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);">
+    <div style="width: {size/3*4}px; height: {size}px; display: inline-flex; margin: 2px; box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);">
         <img src="{url}" alt="{country}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
     </div>
     '''
