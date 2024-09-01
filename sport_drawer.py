@@ -72,6 +72,7 @@ def draw_new_team():
     st.session_state['drawn_team_ids'].append(drawn_team_id)
     st.session_state['cur_team'] = teams_id_map[drawn_team_id]
     st.session_state['newly_sel_team_ids'] = []
+    st.session_state['selecting_logs'] = []
     # if len(st.session_state['drawn_team_ids']) == len(teams_data):
     #     st.session_state['draw_status'] = 'waiting_done'
     # elif len(st.session_state['cur_state']) == 8*len(teams_data):
@@ -253,7 +254,6 @@ def gen_possible_state(cur_team, cur_state, match_idx, drawn_team_ids, shuffle=T
 def select_opponents():
     cur_team = st.session_state['cur_team']
     st.session_state['draw_status'] = 'selecting'
-    st.session_state['selecting_logs'] = []
     original_sel_team_ids = [idx for idx in st.session_state['cur_full_state'][cur_team['id']] if idx != -1]
     
     possible_states = []
@@ -386,7 +386,7 @@ def get_country_flag_html(country, size=15):
     # </div>
     # '''
     return f'''
-    <div style="width: {size/3*4}px; height: {size}px; display: inline-flex; margin: 2px; box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);">
+    <div style="width: {size*4/3}px; height: {size}px; display: inline-flex; margin: 2px; box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);">
         <img src="{url}" alt="{country}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
     </div>
     '''
