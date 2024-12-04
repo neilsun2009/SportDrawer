@@ -7,6 +7,7 @@ from collections import Counter
 class UCLLeagueStageDrawer(BaseDrawer):
     
     tournament = 'UEFA Champions League (League Stage)'
+    highlight_color = 'rgba(0, 106, 255, 0.2)'
     
     def __init__(self, edition, teams_data_path, rules_url=None):
         self.SIU_IMAGES = ['siu0.gif', 'siu1.gif', 'siu2.gif', 'siu3.gif', 'siu4.gif', 'siu5.gif', 'siu6.gif']

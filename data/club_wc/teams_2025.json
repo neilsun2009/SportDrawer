@@ -6,7 +6,7 @@
         "country": "ENG",
         "pot": 1,
         "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
-        "champions": 0
+        "champions": 1
     },
     {
         "name": "Real Madrid",
@@ -15,7 +15,7 @@
         "country": "ESP",
         "pot": 1,
         "logo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
-        "champions": 0
+        "champions": 8
     },
     {
         "name": "FC Bayern München",
@@ -24,7 +24,7 @@
         "country": "GER",
         "pot": 1,
         "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg",
-        "champions": 0
+        "champions": 4
     },
     {
         "name": "Paris Saint-Germain",
@@ -42,7 +42,7 @@
         "country": "ENG",
         "pot": 2,
         "logo": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
-        "champions": 0
+        "champions": 1
     },
     {
         "name": "Borussia Dortmund",
@@ -51,7 +51,7 @@
         "country": "GER",
         "pot": 2,
         "logo": "https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg",
-        "champions": 0
+        "champions": 1
     },
     {
         "name": "Inter Milan",
@@ -60,7 +60,7 @@
         "country": "ITA",
         "pot": 2,
         "logo": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg",
-        "champions": 0
+        "champions": 3
     },
     {
         "name": "Porto",
@@ -69,7 +69,7 @@
         "country": "POR",
         "pot": 2,
         "logo": "https://upload.wikimedia.org/wikipedia/en/f/f1/FC_Porto.svg",
-        "champions": 0
+        "champions": 2
     },
     {
         "name": "Atlético de Madrid",
@@ -77,7 +77,8 @@
         "confed_rank": 9,
         "country": "ESP",
         "pot": 2,
-        "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Atletico_Madrid_Logo_2024.svg"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Atletico_Madrid_Logo_2024.svg",
+        "champions": 1
     },
     {
         "name": "Benfica",
@@ -95,7 +96,7 @@
         "country": "ITA",
         "pot": 2,
         "logo": "https://api.sofascore.app/api/v1/team/2687/image",
-        "champions": 0
+        "champions": 2
     },
     {
         "name": "Red Bull Salzburg",
@@ -111,7 +112,8 @@
         "confed_rank": 1,
         "country": "BRA",
         "pot": 1,
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flamengo_braz_logo.svg"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flamengo_braz_logo.svg",
+        "champions": 1
     },
     {
         "name": "Palmeiras",
@@ -127,7 +129,8 @@
         "confed_rank": 3,
         "country": "ARG",
         "pot": 1,
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Escudo_del_C_A_River_Plate.svg"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Escudo_del_C_A_River_Plate.svg",
+        "champions": 1
     },
     {
         "name": "Fluminense",
@@ -135,7 +138,7 @@
         "confed_rank": 4,
         "country": "BRA",
         "pot": 1,
-        "logo": "https://en.wikipedia.org/wiki/Fluminense_FC#/media/File:FFC_crest.svg"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1d/FFC_crest.svg"
     },
     {
         "name": "Boca Juniors",
@@ -143,7 +146,8 @@
         "confed_rank": 5,
         "country": "ARG",
         "pot": 3,
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Boca_Juniors_logo18.svg"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Boca_Juniors_logo18.svg",
+        "champions": 3
     },
     {
         "name": "Botafogo",
@@ -151,7 +155,7 @@
         "confed_rank": 6,
         "country": "BRA",
         "pot": 3,
-        "logo": "https://en.wikipedia.org/wiki/Botafogo_de_Futebol_e_Regatas#/media/File:Botafogo_de_Futebol_e_Regatas_logo.svg"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/52/Botafogo_de_Futebol_e_Regatas_logo.svg"
     },
     {
         "name": "Al-Hilal",
@@ -159,7 +163,7 @@
         "confed_rank": 1,
         "country": "KSA",
         "pot": 3,
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/57/Al-Hilal_SFC_logo.svgc"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/57/Al-Hilal_SFC_logo.svg"
     },
     {
         "name": "Ulsan HD",
@@ -167,7 +171,7 @@
         "confed_rank": 2,
         "country": "KOR",
         "pot": 3,
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/57/Al-Hilal_SFC_logo.svg"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/b/b5/Ulsan_Hyundai_FC.svg"
     },
     {
         "name": "Urawa Red Diamonds",
@@ -183,7 +187,7 @@
         "confed_rank": 4,
         "country": "UAE",
         "pot": 4,
-        "logo": "https://en.wikipedia.org/wiki/Al_Ain_FC"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/6/62/Al_Ain_FC_logo_2024.png"
     },
     {
         "name": "Al Ahly",
@@ -231,7 +235,7 @@
         "confed_rank": 2,
         "country": "MEX",
         "pot": 3,
-        "logo": "https://seeklogo.com/images/C/club-leon-fc-logo-3788DF3E19-seeklogo.com.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/it/e/e9/Club_Le%C3%B3n_FC_logo.png"
     },
     {
         "name": "Pachuca",
@@ -247,6 +251,7 @@
         "confed_rank": 4,
         "country": "USA",
         "pot": 4,
+        "host": true,
         "logo": "https://upload.wikimedia.org/wikipedia/en/8/84/Seattle_Sounders_logo.svg"
     },
     {
@@ -255,6 +260,7 @@
         "confed_rank": 5,
         "country": "USA",
         "pot": 4,
+        "host": true,
         "logo": "https://upload.wikimedia.org/wikipedia/en/5/5c/Inter_Miami_CF_logo.svg"
     },
     {

@@ -1,6 +1,7 @@
 [theme]
 base = "dark"
-primaryColor = "#006AFF"
+# ucl primaryColor = "#006AFF"
+primaryColor = "#e4a81f"
 
 [server]
 enableStaticServing = true

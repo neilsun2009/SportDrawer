@@ -9,6 +9,7 @@ from abc import ABC, abstractmethod
 class BaseDrawer(ABC):
     
     tournament = 'Bogo Cup'
+    highlight_color = 'rgba(0, 106, 255, 0.2)'
     
     def __init__(self, edition, teams_data_path, rules_url=None):
         """
@@ -21,7 +22,7 @@ class BaseDrawer(ABC):
         self.load_teams()
         
     def setup_page(self):        
-        st.title(f'🏆 {self.tournament} Drawer')
+        st.title(f'🎰 {self.tournament} Drawer')
         st.write(f'This is a drawer simulator of the {self.edition} season.')
         if self.rules_url:
             st.write(f'The rules are described in the [Official Rules]({self.rules_url}).')
@@ -54,11 +55,6 @@ class BaseDrawer(ABC):
         """Draw a new team according to format rules"""
         pass
 
-    @abstractmethod
-    def select_opponents(self):
-        """Select opponents for the drawn team"""
-        pass
-
     def get_team_logo_html(self, logo_url, height=100, width=None, alt='logo', inline=False):
         """Generate HTML for team logo display"""
         if width is None:
@@ -83,6 +79,10 @@ class BaseDrawer(ABC):
             'ITA': 'it', 'FRA': 'fr', 'POR': 'pt', 'NED': 'nl',
             'BEL': 'be', 'UKR': 'ua', 'AUT': 'at', 'SUI': 'ch',
             'CZE': 'cz', 'CRO': 'hr', 'SRB': 'rs', 'SVK': 'sk',
+            'ARG': 'ar', 'BRA': 'br', 'CHL': 'cl', 'MEX': 'mx',
+            'USA': 'us', 'KSA': 'sa', 'JPN': 'jp', 'KOR': 'kr',
+            'UAE': 'ae', 'EGY': 'eg', 'MAR': 'ma', 'NZL': 'nz',
+            'TUN': 'tn', 'RSA': 'za',
         }
         code = NATION_CODE_MAP.get(country, 'xx')
         url = f'https://flagicons.lipis.dev/flags/4x3/{code}.svg'
@@ -127,7 +127,7 @@ class BaseDrawer(ABC):
             st.html(f"""<div style="
                             padding: 2px;
                             opacity: {1 if available else 0.5}; 
-                            background-color: {'rgba(0,106,255,0.2)' if highlight else 'auto'}
+                            background-color: {self.highlight_color if highlight else 'auto'}
                         ">{core_html}</div>""")
 
     def add_log(self, log):
