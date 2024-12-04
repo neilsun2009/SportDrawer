@@ -7,29 +7,28 @@ from collections import Counter
 from abc import ABC, abstractmethod
 
 class BaseDrawer(ABC):
-    def __init__(self, config):
+    
+    tournament = 'Bogo Cup'
+    
+    def __init__(self, edition, teams_data_path, rules_url=None):
         """
         Initialize base drawer with configuration
-        config should include:
-        - title: str
-        - description: str
-        - teams_data_path: str
-        - rules_url: str (optional)
-        - about: str (optional)
         """
-        self.config = config
+        self.edition = edition
+        self.teams_data_path = teams_data_path
+        self.rules_url = rules_url
         self.setup_page()
         self.load_teams()
         
     def setup_page(self):        
-        st.title(self.config['title'])
-        st.write(self.config['description'])
-        if 'rules_url' in self.config:
-            st.write(f'The rules are described in the [Official Rules]({self.config["rules_url"]}).')
+        st.title(f'🏆 {self.tournament} Drawer')
+        st.write(f'This is a drawer simulator of the {self.edition} season.')
+        if self.rules_url:
+            st.write(f'The rules are described in the [Official Rules]({self.rules_url}).')
 
     def load_teams(self):
         """Load and process teams data"""
-        with open(self.config['teams_data_path'], 'r', encoding='utf-8') as f:
+        with open(self.teams_data_path, 'r', encoding='utf-8') as f:
             self.teams_data = json.load(f)
         for idx, team in enumerate(self.teams_data):
             self.teams_data[idx]['id'] = idx

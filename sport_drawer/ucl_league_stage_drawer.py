@@ -4,19 +4,16 @@ import random
 import copy
 from collections import Counter
 
-class UCLDrawer(BaseDrawer):
-    def __init__(self):
+class UCLLeagueStageDrawer(BaseDrawer):
+    
+    tournament = 'UEFA Champions League (League Stage)'
+    
+    def __init__(self, edition, teams_data_path, rules_url=None):
         self.SIU_IMAGES = ['siu0.gif', 'siu1.gif', 'siu2.gif', 'siu3.gif', 'siu4.gif', 'siu5.gif', 'siu6.gif']
         self.MUELLER_IMAGES = ['mueller0.gif']
         self.SAD_IMAGES = ['sad0.png', 'sad1.png']
         
-        config = {
-            'title': '🌟 UCL 2024 League Stage Drawer',
-            'description': 'This is a simulator of the UEFA Champions League 2024 league stage draw.',
-            'teams_data_path': './data/ucl_2024/teams.json',
-            'rules_url': 'https://editorial.uefa.com/resources/0290-1bb9a5f345c8-ac0c4b16a6b3-1000/202425_league_phase_draw_procedure.pdf',
-        }
-        super().__init__(config)
+        super().__init__(edition, teams_data_path, rules_url)
         
     def init_custom_session(self):
         """Initialize UCL-specific session variables"""

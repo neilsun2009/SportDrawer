@@ -1,0 +1,269 @@
+[
+    {
+        "name": "Manchester City",
+        "confed": "UEFA",
+        "confed_rank": 1,
+        "country": "ENG",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+        "champions": 0
+    },
+    {
+        "name": "Real Madrid",
+        "confed": "UEFA",
+        "confed_rank": 2,
+        "country": "ESP",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
+        "champions": 0
+    },
+    {
+        "name": "FC Bayern München",
+        "confed": "UEFA",
+        "confed_rank": 3,
+        "country": "GER",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg",
+        "champions": 0
+    },
+    {
+        "name": "Paris Saint-Germain",
+        "confed": "UEFA",
+        "confed_rank": 4,
+        "country": "FRA",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg",
+        "champions": 0
+    },
+    {
+        "name": "Chelsea",
+        "confed": "UEFA",
+        "confed_rank": 5,
+        "country": "ENG",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
+        "champions": 0
+    },
+    {
+        "name": "Borussia Dortmund",
+        "confed": "UEFA",
+        "confed_rank": 6,
+        "country": "GER",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Inter Milan",
+        "confed": "UEFA",
+        "confed_rank": 7,
+        "country": "ITA",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg",
+        "champions": 0
+    },
+    {
+        "name": "Porto",
+        "confed": "UEFA",
+        "confed_rank": 8,
+        "country": "POR",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/f/f1/FC_Porto.svg",
+        "champions": 0
+    },
+    {
+        "name": "Atlético de Madrid",
+        "confed": "UEFA",
+        "confed_rank": 9,
+        "country": "ESP",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Atletico_Madrid_Logo_2024.svg"
+    },
+    {
+        "name": "Benfica",
+        "confed": "UEFA",
+        "confed_rank": 10,
+        "country": "POR",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/a/a2/SL_Benfica_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Juventus",
+        "confed": "UEFA",
+        "confed_rank": 11,
+        "country": "ITA",
+        "pot": 2,
+        "logo": "https://api.sofascore.app/api/v1/team/2687/image",
+        "champions": 0
+    },
+    {
+        "name": "Red Bull Salzburg",
+        "confed": "UEFA",
+        "confed_rank": 12,
+        "country": "AUT",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/7/77/FC_Red_Bull_Salzburg_logo.svg"
+    },
+    {
+        "name": "Flamengo",
+        "confed": "CONMEBOL",
+        "confed_rank": 1,
+        "country": "BRA",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flamengo_braz_logo.svg"
+    },
+    {
+        "name": "Palmeiras",
+        "confed": "CONMEBOL",
+        "confed_rank": 2,
+        "country": "BRA",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/10/Palmeiras_logo.svg"
+    },
+    {
+        "name": "River Plate",
+        "confed": "CONMEBOL",
+        "confed_rank": 3,
+        "country": "ARG",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Escudo_del_C_A_River_Plate.svg"
+    },
+    {
+        "name": "Fluminense",
+        "confed": "CONMEBOL",
+        "confed_rank": 4,
+        "country": "BRA",
+        "pot": 1,
+        "logo": "https://en.wikipedia.org/wiki/Fluminense_FC#/media/File:FFC_crest.svg"
+    },
+    {
+        "name": "Boca Juniors",
+        "confed": "CONMEBOL",
+        "confed_rank": 5,
+        "country": "ARG",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Boca_Juniors_logo18.svg"
+    },
+    {
+        "name": "Botafogo",
+        "confed": "CONMEBOL",
+        "confed_rank": 6,
+        "country": "BRA",
+        "pot": 3,
+        "logo": "https://en.wikipedia.org/wiki/Botafogo_de_Futebol_e_Regatas#/media/File:Botafogo_de_Futebol_e_Regatas_logo.svg"
+    },
+    {
+        "name": "Al-Hilal",
+        "confed": "AFC",
+        "confed_rank": 1,
+        "country": "KSA",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/57/Al-Hilal_SFC_logo.svgc"
+    },
+    {
+        "name": "Ulsan HD",
+        "confed": "AFC",
+        "confed_rank": 2,
+        "country": "KOR",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/57/Al-Hilal_SFC_logo.svg"
+    },
+    {
+        "name": "Urawa Red Diamonds",
+        "confed": "AFC",
+        "confed_rank": 3,
+        "country": "JPN",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/a/ae/Urawa_Red_Diamonds_logo.svg"
+    },
+    {
+        "name": "Al Ain",
+        "confed": "AFC",
+        "confed_rank": 4,
+        "country": "UAE",
+        "pot": 4,
+        "logo": "https://en.wikipedia.org/wiki/Al_Ain_FC"
+    },
+    {
+        "name": "Al Ahly",
+        "confed": "CAF",
+        "confed_rank": 1,
+        "country": "EGY",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/7/70/Al_Ahly_SC_logo.svg"
+    },
+    {
+        "name": "Wydad AC",
+        "confed": "CAF",
+        "confed_rank": 2,
+        "country": "MAR",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/1/18/Wydad_AC_crest_%282022%29.svg"
+    },
+    {
+        "name": "Espérance de Tunis",
+        "confed": "CAF",
+        "confed_rank": 3,
+        "country": "TUN",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/f/fb/Esp%C3%A9rance_Sportive_de_Tunis_logo.png"
+    },
+    {
+        "name": "Mamelodi Sundowns",
+        "confed": "CAF",
+        "confed_rank": 4,
+        "country": "RSA",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/5/55/The_logo_of_Mamelodi_Sundowns_F.C.png"
+    },
+    {
+        "name": "Monterrey",
+        "confed": "CONCACAF",
+        "confed_rank": 1,
+        "country": "MEX",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/35/Club_de_F%C3%BAtbol_Monterrey_2019_Logo.svg"
+    },
+    {
+        "name": "Club León",
+        "confed": "CONCACAF",
+        "confed_rank": 2,
+        "country": "MEX",
+        "pot": 3,
+        "logo": "https://seeklogo.com/images/C/club-leon-fc-logo-3788DF3E19-seeklogo.com.png"
+    },
+    {
+        "name": "Pachuca",
+        "confed": "CONCACAF",
+        "confed_rank": 3,
+        "country": "MEX",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/9/93/Pachuca_Tuzos_logo.svg"
+    },
+    {
+        "name": "Seattle Sounders",
+        "confed": "CONCACAF",
+        "confed_rank": 4,
+        "country": "USA",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/8/84/Seattle_Sounders_logo.svg"
+    },
+    {
+        "name": "Inter Miami",
+        "confed": "CONCACAF",
+        "confed_rank": 5,
+        "country": "USA",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/5/5c/Inter_Miami_CF_logo.svg"
+    },
+    {
+        "name": "Auckland City",
+        "confed": "OFC",
+        "confed_rank": 1,
+        "country": "NZL",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/5/53/New_Auckland_City_FC_logo_%28updated_2022%29.png"
+    }
+
+]
