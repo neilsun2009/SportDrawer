@@ -54,7 +54,7 @@ class ClubWorldCupDrawer(BaseDrawer):
     
     def check_possible_allocation(self, team, confed_state, group, drawn_team_ids):
         """Check if allocating team to this group leads to a valid solution"""
-        print(f"Checking allocation of {team['name']} to Group {group}")
+        # print(f"Checking allocation of {team['name']} to Group {group}")
         # Create new state with this allocation
         new_state = copy.deepcopy(confed_state)
         new_state[group][team['confed']].append(team)
@@ -87,7 +87,7 @@ class ClubWorldCupDrawer(BaseDrawer):
                     drawn_team_ids + [next_team_id]
                 ):
                     return True
-        print(f"Allocation of {team['name']} to Group {group} is not possible")
+        # print(f"Allocation of {team['name']} to Group {group} is not possible")
         return False
 
     def get_available_groups(self, team):
@@ -100,7 +100,7 @@ class ClubWorldCupDrawer(BaseDrawer):
         # Check each group individually
         for group in self.groups:
             if len(st.session_state['groups'][group]) < 4 and self.can_join_group(team, group, confed_state):
-                print(f"Team {team['name']} Group {group} is available")
+                # print(f"Team {team['name']} Group {group} is available")
                 # For each candidate group, verify that choosing it won't lead to a deadend
                 if self.check_possible_allocation(team, confed_state, group, st.session_state['drawn_team_ids']):
                     available_groups.append(group)

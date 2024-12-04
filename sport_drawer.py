@@ -41,21 +41,43 @@ TOURNAMENTS = [
     
 ]
 
+# Initialize drawer_initialized flag only
+if 'drawer_initialized' not in st.session_state:
+    st.session_state.drawer_initialized = False
+
+def on_tournament_change():
+    st.session_state.drawer_initialized = True
+
+def on_edition_change():
+    st.session_state.drawer_initialized = True
+
+# Sidebar selections
 tournament = st.sidebar.selectbox(
     "Select Tournament",
     TOURNAMENTS,
-    format_func=lambda x: x['name']
+    format_func=lambda x: x['name'],
+    key='selected_tournament',
+    on_change=on_tournament_change
 )
+
 edition = st.sidebar.selectbox(
     "Select Edition",
     tournament['editions'],
-    format_func=lambda x: x['name']
+    format_func=lambda x: x['name'],
+    key='selected_edition',
+    on_change=on_edition_change
 )
 
+# Initialize drawer
 drawer = tournament['drawer'](
     edition=edition['name'],
     teams_data_path=edition['data_path'],
     rules_url=edition['rules_url']
 )
 
+# Initialize session when tournament is changed
+if st.session_state.drawer_initialized:
+    drawer.init_session()
+    st.session_state.drawer_initialized = False
+    
 drawer.run()
