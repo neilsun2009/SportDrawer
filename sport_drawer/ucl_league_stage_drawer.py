@@ -394,10 +394,10 @@ class UCLLeagueStageDrawer(BaseDrawer):
                     highlight_ids=st.session_state['newly_sel_team_ids']
                 )
 
-                if st.session_state['draw_status'] != 'waiting_select':
-                    with st.status('Loading drawing logs...'):
-                        for log in st.session_state['selecting_logs']:
-                            st.write(log)
+                # if st.session_state['draw_status'] != 'waiting_select':
+                #     with st.status('Loading drawing logs...'):
+                #         for log in st.session_state['selecting_logs']:
+                #             st.write(log)
 
     def display_pot_results(self, pot):
         """Display results for a specific pot"""

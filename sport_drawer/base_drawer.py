@@ -82,7 +82,9 @@ class BaseDrawer(ABC):
             'ARG': 'ar', 'BRA': 'br', 'CHL': 'cl', 'MEX': 'mx',
             'USA': 'us', 'KSA': 'sa', 'JPN': 'jp', 'KOR': 'kr',
             'UAE': 'ae', 'EGY': 'eg', 'MAR': 'ma', 'NZL': 'nz',
-            'TUN': 'tn', 'RSA': 'za',
+            'TUN': 'tn', 'RSA': 'za', 'KAZ': 'kz', 'AZE': 'az',
+            'CYP': 'cy', 'GRE': 'gr', 'NOR': 'no', 'DEN': 'dk',
+            'TUR': 'tr', 
         }
         code = NATION_CODE_MAP.get(country, 'xx')
         url = f'https://flagicons.lipis.dev/flags/4x3/{code}.svg'
