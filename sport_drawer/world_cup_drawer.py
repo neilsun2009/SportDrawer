@@ -41,6 +41,8 @@ class WorldCupDrawer(BaseDrawer):
             "Portugal": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXpxM29iYXoxbG16amRrMmM4dzF3N3Rrb2N3YjhuejdtcmRienkzZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nfMNVc0Gb9PhXqcTZT/giphy.gif",
             "Argentina": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGNudDhna2dmdHQ2djdqY3piZmF0a25yYWt1enY1YXpwbWszZG90eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WzR8zb0PN6bUmfz4DW/giphy.gif",
             "Saudi Arabia": "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cGJjbjQ1ZjFsbTAxMmsxcDEyc2xvemNoNGFkaGR1OGpqNmVrOWxhYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PQvrUM9Z8FDdN2ne9X/giphy.gif",
+            "Iran": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjVsZXk0ZWtqYXhudjFjdHpmbjJkYmRocXlobjNiZmx6bXNmazVkZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/j0eo5xgTJ9ZF6ozCMx/giphy.gif",
+            "Japan": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzlkeGdnb2FiZnFxMHFnbDlpcHhtZHAyN2xkdW1oZmxvOTYwOTNlZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0Exu3CpGQeycAO1q/giphy.gif",
         }
         self.DEFAULT_IMAGES = [
             "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3N2V1cXgxOWlhajhiNjRuMTN3emttaTRvOHNoNGZiMmtnYWc5YWJhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/u1ysISFV3VwPJUIqQW/giphy.gif",
