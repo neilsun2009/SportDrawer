@@ -1,6 +1,7 @@
 import streamlit as st
 from sport_drawer.ucl_league_stage_drawer import UCLLeagueStageDrawer
 from sport_drawer.club_world_cup_drawer import ClubWorldCupDrawer
+from sport_drawer.world_cup_drawer import WorldCupDrawer
 
 st.set_page_config(
     page_title='Tournament Drawer', 
@@ -16,6 +17,17 @@ st.set_page_config(
 )
 
 TOURNAMENTS = [
+    {
+        'name': 'FIFA World Cup',
+        'drawer': WorldCupDrawer,
+        'editions': [
+            {
+                'name': '2026',
+                'data_path': './data/wc/teams_2026.json',
+                'rules_url': 'https://digitalhub.fifa.com/m/2d1a1ac7bab78995/original/Draw-Procedures-for-the-FIFA-World-Cup-2026.pdf'
+            }
+        ]
+    },
     {
         'name': 'FIFA Club World Cup',
         'drawer': ClubWorldCupDrawer,
@@ -63,7 +75,7 @@ tournament = st.sidebar.selectbox(
     format_func=lambda x: x['name'],
     key='selected_tournament',
     on_change=on_tournament_change,
-    index=1
+    index=0
 )
 
 edition = st.sidebar.selectbox(

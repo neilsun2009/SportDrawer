@@ -23,7 +23,7 @@ class BaseDrawer(ABC):
         
     def setup_page(self):        
         st.title(f'🎰 {self.tournament} Drawer')
-        st.write(f'This is a drawer simulator of the {self.edition} season.')
+        st.write(f'This is a drawer simulator of the {self.edition} edition.')
         if self.rules_url:
             st.write(f'The rules are described in the [Official Rules]({self.rules_url}).')
 
@@ -72,7 +72,7 @@ class BaseDrawer(ABC):
                     {img_core}
                 </div>'''
 
-    def get_country_flag_html(self, country, size=15):
+    def get_country_flag_html(self, country, size=15, border=True, round=False):
         """Generate HTML for country flag display"""
         NATION_CODE_MAP = {
             'ENG': 'gb-eng', 'SCO': 'gb-sct', 'GER': 'de', 'ESP': 'es',
@@ -84,30 +84,56 @@ class BaseDrawer(ABC):
             'UAE': 'ae', 'EGY': 'eg', 'MAR': 'ma', 'NZL': 'nz',
             'TUN': 'tn', 'RSA': 'za', 'KAZ': 'kz', 'AZE': 'az',
             'CYP': 'cy', 'GRE': 'gr', 'NOR': 'no', 'DEN': 'dk',
-            'TUR': 'tr', 
+            'TUR': 'tr', 'CAN': 'ca', 'COL': 'co', 'URU': 'uy',
+            'SEN': 'sn', 'IRN': 'ir', 'ECU': 'ec', 'AUS': 'au',
+            'PAN': 'pa', 'ALG': 'dz', 'PRY': 'py', 'CIV': 'ci',
+            'UZB': 'uz', 'QAT': 'qa', 'JOR': 'jo', 'CPV': 'cv',
+            'GHA': 'gh', 'CUW': 'cw', 'HTI': 'ht', 'NCL': 'nc',
+            'JAM': 'jm', 'COD': 'cd', 'BOL': 'bo', 'IRQ': 'iq',
+            'SUR': 'sr', 'WAL': 'gb-wls', 'BIH': 'ba', 'NIR': 'gb-nir',
+            'POL': 'pl', 'SWE': 'se', 'ALB': 'al', 'KOS': 'xk',
+            'ROU': 'ro', 'IRL': 'ie', 'MKD': 'mk',
         }
-        code = NATION_CODE_MAP.get(country, 'xx')
-        url = f'https://flagicons.lipis.dev/flags/4x3/{code}.svg'
+        code = NATION_CODE_MAP.get(country, country.lower() if len(country) == 2 else 'xx')
+        if round:
+            url = f'https://hatscripts.github.io/circle-flags/flags/{code}.svg'
+            border = False
+        else:
+            url = f'https://flagicons.lipis.dev/flags/4x3/{code}.svg'
+            if code == 'nc':
+                url = 'https://api.fifa.com/api/v3/picture/flags-sq-4/NCL'
+        if border:
+            border_style = 'margin: 2px; box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);'
+        else:
+            border_style = ''
+        if round:
+            width = size
+        else:
+            width = size*4/3
         return f'''
-        <div style="width: {size*4/3}px; height: {size}px; display: inline-flex; margin: 2px; box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);">
+        <div style="width: {width}px; height: {size}px; display: inline-flex; {border_style}">
             <img src="{url}" alt="{country}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
         </div>
         '''
 
-    def st_display_team(self, team_id, size='big', available=True, highlight=False):
+    def st_display_team(self, team_id, size='big', available=True, highlight=False, show_flag_only=False):
         """Display team information in Streamlit"""
         if team_id == -1:
             team = {'name': 'TBD', 'logo': 'https://hatscripts.github.io/circle-flags/flags/xx.svg', 'country': 'XX'}
         else:
             team = self.teams_id_map[team_id]
-        
+        # Handle playoff teams with multiple countries
+        if team.get('is_playoff'):
+            countries_flags = ''.join([self.get_country_flag_html(c) for c in team.get('countries', [])])
+        else:
+            countries_flags = self.get_country_flag_html(team['country'])
         if size == 'huge':
             core_html = (f"""
                 <div style='margin-top:10px'></div>
                 {self.get_team_logo_html(team['logo'], height=300, alt=team['name'])}
                 <div style='text-align: center;margin-top: 5px'>
                     <big><b>{team['name']}</b></big><br/>
-                    {self.get_country_flag_html(team['country'])}<br/>
+                    {countries_flags}<br/>
                      &nbsp;{'🏆'*team.get('champions', 0)}&nbsp;
                 </div>""")
         elif size == 'big':
@@ -116,12 +142,28 @@ class BaseDrawer(ABC):
                 {self.get_team_logo_html(team['logo'], alt=team['name'])}
                 <div style='text-align: center;margin-top: 5px'>
                     <big><b>{team['name']}</b></big><br/>
-                    {self.get_country_flag_html(team['country'])}<br/>
+                    {countries_flags}<br/>
                      &nbsp;{'🏆'*team.get('champions', 0)}&nbsp;
                 </div>""")
         else:
-            core_html = (f"""<div style='text-align: left;display: flex;justify-content: left;align-items: center;'>
-                    {self.get_team_logo_html(team['logo'], height=30, width=30, alt=team['name'], inline=True)}&nbsp;&nbsp;
+            # For small size, use flag if show_flag_only is True
+            if show_flag_only:
+                if team.get('is_playoff'):
+                    icon_html = f'''
+                    <div style="display: flex; flex-wrap: wrap; max-width: 42px; justify-content: center;">
+                        {''.join([
+                            f'{self.get_country_flag_html(c, size=20, border=False, round=True)}'
+                            for c in team.get('countries', [])
+                        ])}
+                    </div>
+                    '''
+                else:
+                    icon_html = self.get_country_flag_html(team['country'], size=40, round=True)
+            else:
+                icon_html = self.get_team_logo_html(team['logo'], height=30, width=30, alt=team['name'], inline=True)
+            
+            core_html = (f"""<div style='text-align: left;display: flex;justify-content: left;align-items: center; padding: 5px;'>
+                    {icon_html}&nbsp;&nbsp;
                     <span>{team['name']}</span>
                 </div>""")
         
@@ -152,6 +194,9 @@ class BaseDrawer(ABC):
         self.display_results()
 
         st.button('Restart', on_click=self.init_session, type='primary')
+
+        st.caption("Logos and flags are from [Wikipedia](https://en.wikipedia.org/), [Football Logos](https://football-logos.cc/), [Flag Icons](https://flagicons.lipis.dev/), and [Circle Flags](https://hatscripts.github.io/circle-flags/).")
+        st.caption("GIFs are from [Giphy](https://giphy.com/) and the Internet.")
 
     @abstractmethod
     def display_teams(self):

@@ -1,0 +1,393 @@
+[
+    {
+        "name": "Canada",
+        "confed": "CONCACAF",
+        "country": "CAN",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/6/69/Canadian_Soccer_Association_logo.svg",
+        "champions": 0
+
+    },
+    {
+        "name": "Mexico",
+        "confed": "CONCACAF",
+        "country": "MEX",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/3/3f/Mexico_national_football_team_crest.svg",
+        "champions": 0
+    },
+    {
+        "name": "USA",
+        "confed": "CONCACAF",
+        "country": "USA",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/17/United_States_Soccer_Federation_logo_2016.svg",
+        "champions": 0
+    },
+    {
+        "name": "Spain",
+        "confed": "UEFA",
+        "country": "ESP",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/3/39/Spain_national_football_team_crest.svg",
+        "champions": 1
+    },
+    {
+        "name": "Argentina",
+        "confed": "CONMEBOL",
+        "country": "ARG",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/c/c1/Argentina_national_football_team_logo.svg",
+        "champions": 3
+    },
+    {
+        "name": "France",
+        "confed": "UEFA",
+        "country": "FRA",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/1/12/France_national_football_team_seal.svg",
+        "champions": 2
+    },
+    {
+        "name": "England",
+        "confed": "UEFA",
+        "country": "ENG",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/8/8b/England_national_football_team_crest.svg",
+        "champions": 1
+    },
+    {
+        "name": "Brazil",
+        "confed": "CONMEBOL",
+        "country": "BRA",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg",
+        "champions": 5
+    },
+    {
+        "name": "Portugal",
+        "confed": "UEFA",
+        "country": "POR",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Portugal_National_Team_logo.png",
+        "champions": 0
+    },
+    {
+        "name": "Netherlands",
+        "confed": "UEFA",
+        "country": "NED",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/7/78/Netherlands_national_football_team_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Belgium",
+        "confed": "UEFA",
+        "country": "BEL",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Royal_Belgian_FA_logo_2019.svg",
+        "champions": 0
+    },
+    {
+        "name": "Germany",
+        "confed": "UEFA",
+        "country": "GER",
+        "pot": 1,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/e/e3/DFBEagle.svg",
+        "champions": 4
+    },
+    {
+        "name": "Croatia",
+        "confed": "UEFA",
+        "country": "CRO",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/sco/3/39/Croatia_national_football_team_crest.svg",
+        "champions": 0
+    },
+    {
+        "name": "Morocco",
+        "confed": "CAF",
+        "country": "MAR",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Morocco_FRMF.png",
+        "champions": 0
+    },
+    {
+        "name": "Colombia",
+        "confed": "CONMEBOL",
+        "country": "COL",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/29/FCF-Logo-2023.svg",
+        "champions": 0
+    },
+    {
+        "name": "Uruguay",
+        "confed": "CONMEBOL",
+        "country": "URU",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/4/43/Uruguay_national_football_team_seal.svg",
+        "champions": 2
+    },
+    {
+        "name": "Switzerland",
+        "confed": "UEFA",
+        "country": "SUI",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/a/a0/Swiss_Football_Association_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Japan",
+        "confed": "AFC",
+        "country": "JPN",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/8/84/Japan_national_football_team_crest.svg",
+        "champions": 0
+    },
+    {
+        "name": "Senegal",
+        "confed": "CAF",
+        "country": "SEN",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/1/16/Senegalese_Football_Federation_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Iran",
+        "confed": "AFC",
+        "country": "IRN",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/b/b9/Iranian_football_badge.svg",
+        "champions": 0
+    },
+    {
+        "name": "South Korea",
+        "confed": "AFC",
+        "country": "KOR",
+        "pot": 2,
+        "logo": "https://football-logos.cc/logos/south-korea/700x700/south-korea-national-team.222b8234.png",
+        "champions": 0
+    },
+    {
+        "name": "Ecuador",
+        "confed": "CONMEBOL",
+        "country": "ECU",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/b/ba/Ecuador_national_football_team.png",
+        "champions": 0
+    },
+    {
+        "name": "Austria",
+        "confed": "UEFA",
+        "country": "AUT",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/b/b7/Austria_national_football_team_crest.svg",
+        "champions": 0
+    },
+    {
+        "name": "Australia",
+        "confed": "AFC",
+        "country": "AUS",
+        "pot": 2,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Australia_national_football_team_badge.svg",
+        "champions": 0
+    },
+    {
+        "name": "Norway",
+        "confed": "UEFA",
+        "country": "NOR",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/6/6c/Norway_national_football_team_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Panama",
+        "confed": "CONCACAF",
+        "country": "PAN",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/9/92/Fepafut_logo_2024.svg",
+        "champions": 0
+    },
+    {
+        "name": "Egypt",
+        "confed": "CAF",
+        "country": "EGY",
+        "pot": 3,
+        "logo": "https://football-logos.cc/logos/egypt/700x700/egypt-national-team.cb1f75a6.png",
+        "champions": 0
+    },
+    {
+        "name": "Algeria",
+        "confed": "CAF",
+        "country": "ALG",
+        "pot": 3,
+        "logo": "https://football-logos.cc/logos/algeria/700x700/algeria-national-team.4c3d5d41.png",
+        "champions": 0
+    },
+    {
+        "name": "Scotland",
+        "confed": "UEFA",
+        "country": "SCO",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/5/50/Scotland_national_football_team_logo_2014.svg",
+        "champions": 0
+    },
+    {
+        "name": "Paraguay",
+        "confed": "CONMEBOL",
+        "country": "PRY",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/14/Asociaci%C3%B3n_Paraguaya_de_F%C3%BAtbol_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Tunisia",
+        "confed": "CAF",
+        "country": "TUN",
+        "pot": 3,
+        "logo": "https://football-logos.cc/logos/tunisia/700x700/tunisia-national-team.55eea647.png",
+        "champions": 0
+    },
+    {
+        "name": "Ivory Coast",
+        "confed": "CAF",
+        "country": "CIV",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/9/93/Ivorian_Football_Federation_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Uzbekistan",
+        "confed": "AFC",
+        "country": "UZB",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/3/3d/Uzbekistan_Football_Association.svg",
+        "champions": 0
+    },
+    {
+        "name": "Qatar",
+        "confed": "AFC",
+        "country": "QAT",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/3/3a/Qatar_Football_Association_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Saudi Arabia",
+        "confed": "AFC",
+        "country": "KSA",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/e/ee/Saudi_Arabia_national_football_team_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "South Africa",
+        "confed": "CAF",
+        "country": "RSA",
+        "pot": 3,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/South_Africa_national_soccer_team_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "Jordan",
+        "confed": "AFC",
+        "country": "JOR",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/54/Jordan_national_football_team_logo_2024.svg",
+        "champions": 0
+    },
+    {
+        "name": "Cape Verde",
+        "confed": "CAF",
+        "country": "CPV",
+        "pot": 4,
+        "logo": "https://football-logos.cc/logos/cabo-verde/700x700/cabo-verde-national-team.85151b81.png",
+        "champions": 0
+    },
+    {
+        "name": "Ghana",
+        "confed": "CAF",
+        "country": "GHA",
+        "pot": 4,
+        "logo": "https://www.ghanafa.org/images/gfa-logo-footer.png",
+        "champions": 0
+    },
+    {
+        "name": "Curaçao",
+        "confed": "CONCACAF",
+        "country": "CUW",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/1/1c/Curacao_Football_Federation.svg",
+        "champions": 0
+    },
+    {
+        "name": "Haiti",
+        "confed": "CONCACAF",
+        "country": "HTI",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/Federation_Haitienne_de_Football.png",
+        "champions": 0
+    },
+    {
+        "name": "New Zealand",
+        "confed": "OFC",
+        "country": "NZL",
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/3/3a/New_Zealand_Football_Crest_2022.svg",
+        "champions": 0
+    },
+    {
+        "name": "FIFA Play-Off #1",
+        "is_playoff": true,
+        "confeds": ["CAF", "CONCACAF", "OFC"],
+        "countries": ["COD", "JAM", "NCL"],
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/aa/FIFA_logo_without_slogan.svg",
+        "champions": 0
+    },
+    {
+        "name": "FIFA Play-Off #2",
+        "is_playoff": true,
+        "confeds": ["AFC", "CONMEBOL", "CONCACAF"],
+        "countries": ["IRQ", "BOL", "SUR"],
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/aa/FIFA_logo_without_slogan.svg",
+        "champions": 0
+    },
+    {
+        "name": "UEFA Play-Off #1",
+        "is_playoff": true,
+        "confeds": ["UEFA"],
+        "countries": ["ITA", "WAL", "BIH", "NIR"],
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/9/9d/UEFA_full_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "UEFA Play-Off #2",
+        "is_playoff": true,
+        "confeds": ["UEFA"],
+        "countries": ["POL", "UKR", "SWE", "ALB"],
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/9/9d/UEFA_full_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "UEFA Play-Off #3",
+        "is_playoff": true,
+        "confeds": ["UEFA"],
+        "countries": ["TUR", "SVK", "KOS", "ROU"],
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/9/9d/UEFA_full_logo.svg",
+        "champions": 0
+    },
+    {
+        "name": "UEFA Play-Off #4",
+        "is_playoff": true,
+        "confeds": ["UEFA"],
+        "countries": ["DEN", "CZE", "IRL", "MKD"],
+        "pot": 4,
+        "logo": "https://upload.wikimedia.org/wikipedia/en/9/9d/UEFA_full_logo.svg",
+        "champions": 0
+    }  
+]
