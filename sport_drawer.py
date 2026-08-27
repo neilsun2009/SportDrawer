@@ -44,6 +44,11 @@ TOURNAMENTS = [
         'drawer': UCLLeagueStageDrawer,
         'editions': [
             {
+                'name': '2026/27',
+                'data_path': './data/ucl/teams_2026.json',
+                'rules_url': 'https://editorial.uefa.com/resources/02a8-217222c78866-a38c70fc1193-1000/ucl_draw_procedure.pdf'
+            },
+            {
                 'name': '2025/26',
                 'data_path': './data/ucl/teams_2025.json',
                 'rules_url': 'https://editorial.uefa.com/resources/029c-1e95e1cbbcd9-9ddb0c4f9a94-1000/ucl_league_phase_draw_procedure.pdf'
@@ -75,7 +80,7 @@ tournament = st.sidebar.selectbox(
     format_func=lambda x: x['name'],
     key='selected_tournament',
     on_change=on_tournament_change,
-    index=0
+    index=2
 )
 
 edition = st.sidebar.selectbox(

@@ -93,6 +93,7 @@ class BaseDrawer(ABC):
             'SUR': 'sr', 'WAL': 'gb-wls', 'BIH': 'ba', 'NIR': 'gb-nir',
             'POL': 'pl', 'SWE': 'se', 'ALB': 'al', 'KOS': 'xk',
             'ROU': 'ro', 'IRL': 'ie', 'MKD': 'mk',
+            'SCT': 'gb-sct',
         }
         code = NATION_CODE_MAP.get(country, country.lower() if len(country) == 2 else 'xx')
         if round:
